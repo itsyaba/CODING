@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 ,
+.pimg4 {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.pimg1 {
+
+    background-image: url(img/play.jpg);
+
+}
+
+.pimg2{
+
+    background-image: url(img/dreams.jpg);
+
+}
+
+.pimg3{
+
+    background-image: url(img/city-sleeps.jpg);
+
+}
+
+.pimg4{
+
+    background-image: url(img/antelope-canyon-984055.jpg);
+}
+
+.border , .border1{
+    background-color: white;    
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 60px;
+    border-radius: 30px;
+}
+
+.border:hover{
+background-color: black;
+color: whitesmoke;
+}
+
+.section{
+    text-align: center;
+    line-height: 30px;
+    font-size: 2rem;
+padding: 60px;
+}
+
+.section h2{
+    line-height: 8 0px;
+    margin: 50px;
+}
+.border1{
+    font-size: 3em;
+    color: tomato;
+    font-family: cursive;
+}

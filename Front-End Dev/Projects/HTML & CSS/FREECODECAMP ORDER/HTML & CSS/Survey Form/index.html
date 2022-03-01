@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="full">
+        <div class="not-form">
+            <h1 class="header">freeCodeCamp Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </div>
+        <div class="form">
+            <form>
+                <div class="formu">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="name">
+                </div>
+                <div class="formu">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter Your Email">
+                </div>
+                <div class="formu">
+                    <label for="age">Age</label>
+                    <input type="number" min="10" max="99" placeholder="Enter  Your Age">
+                </div>
+                <div class="formu">
+                    <label for="desc">Which option best describes your current role?</label>
+                    <select name="role" id="role">
+                        <option value="" selected disabled>Select current role</option>
+                        <option value="student">student</option>
+                        <option value="full-time-job">Full Time Job</option>
+                        <option value="full-time-learn">Full Time Learner</option>
+                        <option value="not">Prefer Not To Say</option>
+                        <option value="other">Others</option>
+                    </select>
+                </div>
+                <div class="formu">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                 <label for="Definitely">
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+                <label for="maybe">
+                <input type="radio" class="rad rad-2">Maybe</label>
+                <label for="not-sure">
+                <input type="radio" class="rad rad-3">Not Sure</label>
+                </div>
+                <div class="formu">
+                <label for="choose">
+                <p>What is your favorite feature of freeCodeCamp?</p></label>
+                <select name="fav" id="fav">
+                <option name="sle" id="" selected >Select An Option</option>
+                <option name="challenge" id="">Challenge</option>
+                <option name="project" id="">Project</option>
+                <option name="open" id="">Open Source</option>
+                </select>
+                </div>
+                <div class="formu formu1">
+                <p>What would you like to see improved? </p>
+                <label for="front">
+                    <input type="checkbox">Front-end Projects
+                </label>
+                <label for="back">
+                    <input type="checkbox">Back-end Projects
+                </label>
+                <label for="data">
+                    <input type="checkbox">Data Visualization
+                </label>
+                <label for="challenge">
+                    <input type="checkbox">Challenge
+                </label>
+                <label for="open">
+                    <input type="checkbox">Open Source Community
+                </label>
+                <label for="gitter">
+                    <input type="checkbox">Gitter help rooms
+                </label>
+                <label for="videos">
+                    <input type="checkbox">Videos
+                </label>
+                <label for="city">
+                    <input type="checkbox">City Meetups
+                </label>
+                <label for="wiki">
+                    <input type="checkbox">Wiki
+                </label>
+                <label for="Forum">
+                    <input type="checkbox">Forum
+                </label>
+                <label for="add">
+                    <input type="checkbox">Additional Courses
+                </label>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

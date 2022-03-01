@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(man.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.full {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+
+.note {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.head {
+    background-color: rgb(42, 163, 42);
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+.one,
+.two,
+.three {
+    height: 7px;
+    width: 50px;
+
+    /* margin: 20px; */
+
+    background-color: rgb(48, 20, 20);
+    border-radius: 10px;
+
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+
+.two {
+    top: 4%;
+    width: 45px;
+}
+
+.three {
+    top: 6%;
+    width: 40px;
+
+}

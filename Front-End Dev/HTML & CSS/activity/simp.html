@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: hsl(0, 19%, 76%);
+    }
+    .emo{
+        background-color: yellow;
+        height: 300px;
+        width: 300px;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50% );
+
+        border-radius: 50%;
+    }
+    .eye-left , 
+    .eye-right{
+        background-color: rgb(0, 0, 0);
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        /* font-size: 4rem;
+        font-weight: bolder; */
+    }
+    .eye-right{
+       position: absolute;
+       top: 30%;
+       right: 20%;
+}
+    .eye-left{
+        position: absolute;
+        top: 30%;
+        left: 20%;
+    }
+    .mouth{
+        background-color: black;
+        width: 60px;
+        height: 100px;
+        border-radius: 50%;
+ 
+ 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%  , 0%);
+    }
+    .eyelas{
+        width:70px;
+        height: 20px;
+        background-color: rgb(255, 0, 0);
+
+        position: absolute;
+        top: 22%;
+        left: 15%;
+        z-index: 1;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        
+    }
+    .eyelas-left{
+        left: 61%;  
+    }
+</style>
+<body>
+    <div class="emo">
+        <div class="eyelas"></div>
+        <div class="eyelas eyelas-left"></div>
+
+        <div class="eyes">
+            <div class="eye-left"></div>
+            <div class="eye-right"></div>
+        </div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>

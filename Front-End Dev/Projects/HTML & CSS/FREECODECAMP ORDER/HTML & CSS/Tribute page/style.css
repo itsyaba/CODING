@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Ephesis&display=swap');
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color: #e3eeee;
+}
+#title{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 100px;
+    font-family: 'Akronim', cursive;
+    font-weight: lighter;
+}
+.para{
+    font-size: 1.67em;
+    font-style: italic;
+    margin-bottom: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.img-div{
+    background-color: rgb(245, 245, 245);
+    /* width: 90%; */
+    margin: 30px;
+    border-radius: 20px;
+    padding: 40px;
+}
+#image{
+    height: 300px;
+    width: 400px;
+    border-radius:20px;
+    padding: 10px;
+}
+.para1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.lis{
+    padding: 20px;
+    font-size: 1.4em;
+}
+ul{
+  max-width: 550px;
+  margin: auto;
+  text-align: left;
+  line-height: 1.6;
+  /* text-align: left; */
+}
+li{
+    margin-left: 100px;
+}
+.yaba{
+    padding: 200px;
+    width: 1000px;
+}

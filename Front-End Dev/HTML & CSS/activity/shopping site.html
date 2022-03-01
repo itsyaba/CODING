@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="mask-icon" type=""
+        href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+        color="#111">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.fullscreen{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/New/xfce/mountains-1412683.jpg);
+    background-position: center;
+    background-size: cover;
+    /* padding: 0 8%; */
+}
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    padding:20px 0 ;
+    border-radius: 10px;
+    z-index: 999;
+}
+.logo{
+    background-repeat: no-repeat;
+    width:300px;
+}
+ul{
+    position:absolute;
+    justify-content: space-between;
+    top: 20px;
+    right: 20px;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.head{
+    padding:90px 0 0 120px;
+    font-family:monospace;
+    font-size: 1.5rem;
+    text-align:center;
+    font-weight: bold;
+    position: absolute;
+    left: 30px;
+    display: block;
+}
+.email {
+    position: absolute;
+    top: 150px;
+    left: 30%;
+    display: block;
+} 
+label input{
+   padding: 10px 60px;
+   margin: 10px;
+   font-stretch: expanded;
+}
+.btn{
+    background-color: yellow;
+    font-variant: small-caps;
+    font-size: 1.2rem;
+    padding: 10px 50px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+</style>
+<body>
+    <div class="fullscreen">
+   <nav>
+        <div class="logo"><img src="logo.png" alt="logo" class="logo"></div>
+        <div class="lists">
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">How It Works </a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </div>
+    </nav>
+   
+    <main>
+        <div class="hand">
+            <h3 class="head"> Handcrafted, home-made masterpieces</h3>
+        </div>
+        <div class="email">
+            <label for="email">
+                <input type="email" required=""  name="email" id="email" placeholder="Enter Your Email">
+                <button type="submit" class="btn">Get started</button>
+            </label>
+        </div>
+    </main>
+    <!-- <footer>
+        <div class="copy">
+        &copy; 2021 Yaba 
+        </div>
+    </footer> -->
+</div>
+</body>
+</html>
+
+
+<!-- 
+    Logo for car fa fa-3x fa-truck
+    Premium fa fa-3x fa-fire 
+    batt fa fa-3x fa-battery-full
+ -->

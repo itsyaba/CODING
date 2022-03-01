@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .welcome-section{
+          display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+          background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    }
+    .navbar{
+        position: fixed;
+        top:0%;
+        padding-bottom: 30px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+    }
+    .head-one{
+        color: whitesmoke;
+        font-size: 3em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+    .para-one{
+        position: absolute;
+        top: 55%;
+        color: whitesmoke;
+        font-style: oblique;
+        font-size: 1.3rem;
+    }
+    .project-title , .profile-link , .links{
+        position: absolute;
+        top: 75%; 
+        left: 50%;
+        transform: translate(-50% , -50%);
+}
+    a{
+        color: whitesmoke;
+        padding: 20px;
+        text-decoration: none ;
+    }
+</style>
+<body>
+    <section class="welcome-section">
+        <h1 class="head-one">HEY I AM A WEB DEV</h1>
+        <p class="para-one">Lets work togeter</p>
+        <section class="projects">
+            <header class="projects">
+                <h2 class="project-title">PROJECTS</h2>
+            </header>
+            <a href="#" class="links">Project 1</a>
+
+        </section>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <footer class="profile-link">
+            <a href="#">GITHUB</a>
+        </footer>
+    </section>
+</body>
+</html>

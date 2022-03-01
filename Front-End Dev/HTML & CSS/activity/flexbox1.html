@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+</head>
+<style>
+    .parent{
+        display: flex;
+        /* flex-direction: column; Will tell the element the direction */
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+    }
+    .one{
+        background-color: #eeeeee;
+        height: auto;
+        width: 150px;
+        margin: 10px;
+        padding: 30px;
+        text-transform: uppercase;
+    }
+    .two{
+        background-color: #eeeeee;
+        height: auto;
+        width: 120px;
+        margin: 10px;
+        flex-grow: 1;
+        padding: 30px;
+
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="one one1" style="order:3 ;">
+            1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id unde exercitationem sint quisquam culpa ullam suscipit. Illum enim exercitationem esse eius molestiae a minus distinctio. Sint voluptate voluptatem nihil.</div>
+        <div class="two two1" style="order:5 ;">
+            2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consectetur temporibus libero voluptas, omnis ut cum, nobis voluptatibus quia id minus praesentium nulla dolor harum aliquam labore tempore natus explicabo.</div>
+        <div class="one one2" style="order: 1;">
+            3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, officiis.</div>
+        <div class="two two2" style="order:2 ;">
+            4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae exercitationem quia non consectetur cumque eaque.</div>
+        <div class="two two3" style="order:4 ;">
+            5 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tenetur consequuntur a laudantium facere, dignissimos animi ipsa debitis commodi! Blanditiis exercitationem nobis aliquam porro asperiores beatae aut earum fugiat sunt?</div>
+        <!-- <div class="two two4">6</div>
+        <div class="two two5">7</div>
+        <div class="two two6">8</div> -->
+        <!-- <div class="two">9</div>
+        <div class="two">0</div> -->
+        <!-- <div class="two">-</div>
+        <div class="two">=</div>
+        <div class="two">q</div>
+        <div class="two">w</div>
+        <div class="two">e</div>
+        <div class="two">r</div>
+        <div class="two">t</div>
+        <div class="two">y</div>
+        <div class="two">u</div>
+        <div class="two">i</div>
+        <div class="two">o</div>
+        <div class="two">p</div>
+        <div class="two">a</div>
+        <div class="two">s</div> -->
+
+    </div>
+</body>
+</html>

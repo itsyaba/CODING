@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitoion </title>
+</head>
+<style>
+    input ,form ,h3, button{
+        margin: 20px;
+    }
+    input{
+        /* border:none; */
+        border-color: 2px ;
+        outline: none;
+        border-bottom-left-radius: 20px;
+    }
+    button{
+        /* transition: ; */
+        transition: padding 1s ease;
+        border: none;
+        outline: none;
+        background: none;
+    }
+    button:hover{
+        color: rgb(43, 7, 7);
+        font-weight: 900;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: rosybrown;
+        /* -moz-animation: none; */
+    }
+</style>
+<body>
+    <form>
+        <h3>Contact Us</h3>
+        <input type="email"><br>
+        <input type="password"><br>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</body>
+</html>

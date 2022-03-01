@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=IM+Fell+English+SC&display=swap');
+
+
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 20px;
+    font-weight: light;
+    font-family: sans-serif;
+    background-color: var(--main-red);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 300;
+}
+
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.navbar ul li:hover{
+    background: var(--main-blue);
+}
+
+a{
+    text-decoration: none;
+    color:var(--main-white);
+}
+
+/*-----Nav Bar ENDS HERE----- */
+
+/* .main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    height: 100vh;
+    width: 100%;
+} */
+
+
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100%;
+
+    font-size: 1.2em;
+    background-color: var(--main-gray);
+    color:var(--main-white);
+     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+
+}
+.head-one{
+    font-size: 5.0em;
+    line-height: 30px;
+    font-family: 'Ephesis', sans-serif;
+    text-transform: capitalize;
+}
+
+.para-one{
+    padding:40px;
+    text-align: center;
+    font-style: italic;
+    color: var(--main-red);
+}
+
+/* ---- ABOUT PAGE ENDS HERE */
+
+.projects{
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    padding: 200px;
+    background: var(--main-blue);
+}
+.head-two{
+    font-family: 'IM Fell English SC', serif;
+    max-width: 640px;
+    font-size: 2.9rem;
+    padding: 10px;
+    margin: 0 auto 6rem auto;
+    color: var(--main-white);
+    border-bottom: 0.2rem solid var(--main-white);
+}
+.link-one{
+    display:block;
+    margin: 20px;
+    width: 60vw;
+    text-align:center;
+    padding: 20px 10px;
+    background-color: var(--main-gray);
+    border: 2px var(--main-white) solid;
+    border-radius: 20px;
+    color:var(--main-white);
+}
+
+.btn{
+    background-color: var(--main-gray);
+    padding: 15px;
+    color: var(--main-white);
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    transition: all ease-in-out 200ms;
+}
+.btn:hover , .link-one:hover{
+    background-color: #181719;
+    font-size: larger;
+    border: 2px var(--main-white) solid;
+    
+}
+/* ---PROJECTS ENDS HERE */
+.contact{
+    background-color: var(--main-gray);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro-two{
+    line-height: 30px;
+}
+.head-three{
+    font-family:'IM Fell English SC', serif ;
+    font-size: 2rem;
+    color: var(--main-white);
+    margin-bottom: 10px;
+}
+.para-two{
+    font-style: italic;
+    text-align: center;
+    color: gray;
+}
+.logo{
+    font-size: 1em;
+    margin: 20px;
+    font-variant-caps:petite-caps;
+}   
+
+.name{
+    font-family: sans-serif;
+    font-weight: 100;
+    flex-basis: 20%;
+     padding:  5px;
+     font-size: 30px;
+}
+
+/* ---CONTECT ENDS HERE */
+
+hr{
+    color: var(--main-red);
+}
+footer{
+    height:5vh;
+    background-color: var(--main-gray);
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

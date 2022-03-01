@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+
+.full {
+    height: 100%;
+    width: 100%;
+    background-image: url(images/bg-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--violet);
+}
+
+
+.parent {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.child-one {
+    height: 100vh;
+    width: 60%;
+    /* flex-basis: 4; */
+    background-image: url(images/illustration-mockups.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+
+    margin-left: 30px;
+    /* padding: 90px; */
+}
+
+.child-two {
+    /* flex-basis: 1; */
+    width: 35%;
+
+}
+
+h1 {
+    font-weight: 600;
+    padding-bottom: 30px;
+    line-height: 50px;
+    color: white;
+    /* font-family: sans-serif; */
+    /* font-family: 'Architects Daughter', cursive; */
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.29rem;
+}
+
+
+p {
+    color: wheat;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 40px;
+
+}
+
+.some {
+    padding-bottom: 200px;
+    text-align: start;
+    margin-right: 30px;
+    padding-right: 70px;
+}
+
+.btn {
+    border: none;
+    padding: 10px 60px;
+    color: var(--violet);
+    border-radius: 40px;
+    box-shadow: 4px 6px 10 10px rgba(0, 0, 0, 0.555);
+}
+
+.btn:hover {
+    color: white;
+    background-color: var(--soft-magenta);
+
+}
+
+.social {
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    z-index: 999;
+}
+
+.socials {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.socials:hover{
+    border: 2px solid var(--soft-magenta);
+    background-color: var(--soft-magenta);
+}

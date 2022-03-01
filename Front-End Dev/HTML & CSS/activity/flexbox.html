@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .container-1{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction:row-reverse;
+        }
+        
+        .container-2{
+            /* width: 33.333%; */
+            display: flex;
+            justify-content:space-around;
+            flex-direction:row;
+            flex-wrap:wrap;
+        }
+        .container-1 div , .container-2 div{
+            border: 1px #ccc solid;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            background: burlywood;
+        }
+        .box-1{
+            flex:2;
+            order: 3;
+            /* To make only one of them */
+        }
+        .box-2{
+            flex:1;
+            order: 1;
+        }
+        .box-3{
+            flex:1;
+            order: 2;         
+        }
+        .container-2-box{
+        flex-basis:20%;
+        }
+        .contianer{
+            height:200px;
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-around;
+            align-items:center;
+            /* flex-direction: column; */
+            border: 8px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h3>Box One</h3>
+            <p>In fact, the performance of British riders had been so
+            underwhelming that one of the top bike manufacturers in Europe
+            refused to sell bikes to the team because they were afraid that it would
+            hurt sales if other professionals saw the Brits using their gear.</p>
+        </div>
+        <div class="box-2">
+            <h3>Box Two</h3>
+            <p>In fact, the performance of British riders had been so
+            underwhelming that one of the top bike manufacturers in Europe
+            refused to sell bikes to the team because they were afraid that it would
+            hurt sales if other professionals saw the Brits using their gear.</p>
+        </div>
+        <div class="box-3">
+            <h3>Box Three</h3>
+            <p>In fact, the performance of British riders had been so
+            underwhelming that one of the top bike manufacturers in Europe
+            refused to sell bikes to the team because they were afraid that it would
+            hurt sales if other professionals saw the Brits using their gear.</p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="container-2-box">
+            <h3>Box Four</h3>
+            <p>That same year, Bradley Wiggins became the first British cyclist to
+            win the Tour de France. The next year, his teammate Chris Froome
+            won the race, and he would go on to win again in 2015, 2016, and 2017,
+            giving the British team five Tour de France victories in six years.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Five</h3>
+            <p>That same year, Bradley Wiggins became the first British cyclist to
+            win the Tour de France. The next year, his teammate Chris Froome
+            won the race, and he would go on to win again in 2015, 2016, and 2017,
+            giving the British team five Tour de France victories in six years.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Six</h3>
+            <p>That same year, Bradley Wiggins became the first British cyclist to
+            win the Tour de France. The next year, his teammate Chris Froome
+            won the race, and he would go on to win again in 2015, 2016, and 2017,
+            giving the British team five Tour de France victories in six years.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Seven</h3>
+            <p>That same year, Bradley Wiggins became the first British cyclist to
+                win the Tour de France. The next year, his teammate Chris Froome
+                won the race, and he would go on to win again in 2015, 2016, and 2017,
+                giving the British team five Tour de France victories in six years.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Eight</h3>
+            <p>That same year, Bradley Wiggins became the first British cyclist to
+                win the Tour de France. The next year, his teammate Chris Froome
+                won the race, and he would go on to win again in 2015, 2016, and 2017,
+                giving the British team five Tour de France victories in six years.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Nine</h3>
+            <p>That same year, Bradley Wiggins became the first British cyclist to
+                win the Tour de France. The next year, his teammate Chris Froome
+                won the race, and he would go on to win again in 2015, 2016, and 2017,
+                giving the British team five Tour de France victories in six years.</p>
+        </div>
+    </div>
+   <section class="contianer">
+    <div class="box box-n1">1</div>
+    <div class="box box-n2">2</div>
+    <div class="box box-n3">3</div>
+    <div class="box box-n4">4</div>
+    <div class="box box-n5">5</div>
+
+   </section>
+</body>
+</html>

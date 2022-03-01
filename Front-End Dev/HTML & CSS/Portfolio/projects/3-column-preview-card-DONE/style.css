@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rampart+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+
+
+.child-two,
+.child-one,
+.child-three {
+    width: 100%;
+    padding: 50px;
+    text-align: left;
+    height: 60%;
+
+}
+
+.child-one {
+    margin-left: 60px;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.child-two {
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.child-three {
+    background-color: hsl(179, 100%, 13%);
+    margin-right: 60px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+h3 {
+    font-family: 'Rampart One', cursive;
+    padding-bottom: 30px;
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Architects Daughter', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: hsla(0, 0%, 100%, 0.75);
+
+}
+
+img {
+    padding-bottom: 20px;
+
+}
+
+.btn {
+    position: absolute;
+    top: 67%;
+    border-radius: 30px;
+    padding: 10px 50px;
+    font-size: 1.1rem;
+    font-weight: 900;
+    border: none;
+    /* margin-top: 80px; */
+
+}
+
+.btn-one {
+    color: hsl(31, 77%, 52%);
+}
+
+
+.btn-one:hover,
+.btn-two:hover,
+.btn-three:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid;
+
+}
+
+@media (max-width:700px) {
+
+    .child-two,
+    .child-one,
+    .child-three {
+        width: 100%;
+        /* padding: 50px; */
+        text-align: left;
+        height: 100%;
+
+    }
+
+    .btn {
+        position: absolute;
+        top: 76%;
+        border-radius: 30px;
+        font-size: 0.9rem;
+        border: none;
+        /* margin-top: 80px; */
+
+    }
+
+    /* .btn-one{
+       color: blue;
+   } */
+}

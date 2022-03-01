@@ -1,0 +1,220 @@
+:root {
+    --glass-background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    --main-background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    --circles: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    --h1-font-color: #426696;
+    --h2--font-color: #658ec6;
+    --card-bacground: linear-gradient(to left top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden ; */
+}
+
+h2 {
+    color: var(--h2--font-color);
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+h1,
+p,
+h3 {
+    color: var(--h1-font-color);
+
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: var(--main-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    min-height: 80vh;
+    width: 60%;
+    background: var(--glass-background);
+    border-radius: 2rem;
+    z-index: 999;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.circle1,
+.circle2 {
+    height: 20rem;
+    width: 20rem;
+    background: var(--circles);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    border-radius: 50%;
+    border: 1px solid var(--h1-font-color);
+}
+
+.circle1 {
+    left: 70%;
+    top: 3%;
+
+}
+
+.circle2 {
+    top: 70%;
+    left: 10%;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--glass-background);
+    border-radius: 2rem;
+}
+
+.games {
+    flex: 2;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.link img {
+    margin-right: 30px;
+}
+
+.link:hover {
+    background: var(--main-background);
+    color: var(--h2--font-color);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+}
+
+.user img {
+    width: 77%;
+}
+
+.pro {
+    display: flex;
+    background: var(--main-background);
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width: 20rem;
+    border-radius: 20px;
+    transform: translateY(25%);
+    transition: all 2s;
+}
+
+.pro:hover {
+    transform: translateY(70%);
+    background: var(--glass-background);
+}
+
+.games {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    /* width: 20rem; */
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem 1rem;
+    background: var(--card-bacground);
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+}
+
+.card:hover {
+    background: var(--main-background);
+    /* transform:rotate(-2deg) ; */
+    transform: scale(110%);
+}
+
+.status {
+    font-size: 2rem;
+    /* padding: 50px 40px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    transform: translate(-22%, -10%);
+    margin: 30px;
+}
+
+.status input {
+    border: none;
+    padding: 1em 4rem;
+    width: 100%;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.status input:focus {
+    outline: none;
+
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.progress {
+    width: 100%;
+    height: 25%;
+    border-radius: 20px;
+    background: whitesmoke;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.progress::after {
+    content: "";
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    background: var(--main-background);
+    right: 50%;
+    overflow: hidden;
+}
+
+.percentage {
+    margin-left: 20px;
+}

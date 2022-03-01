@@ -1,0 +1,230 @@
+:root{
+    --soft-pink:#e41c6f;
+    --black: #000;
+    --white:#fff;
+    --soft-white:#ccc;
+    --dark-black:#222;
+    --gray-type:#777;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color:var(--black);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    background-color: var(--soft-white);
+    padding-right: 1.5rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+    width: 3.65rem;
+    height: 2rem;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu.change {
+    left: 15vw;
+    transform: rotate(45deg);
+
+}
+
+.menu-line{
+    width: 100%;
+    height: 2rem;
+    background-color: var(--white);
+    margin: 0.3rem 0;
+    box-shadow:0.1rem 0.1rem 0.3rem var(--gray-type);
+    transition: transform 0.5s ;
+}
+
+.change .menu-line-1{
+    transform: rotate(270deg) translateX(-0.3rem);
+
+}
+
+.change .menu-line-2{
+    transform: rotate(360deg) translateY(-0.9rem);
+}
+
+.navbar {
+    width: 15vw;
+    height: 100vh;
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: -15vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2rem;
+    z-index: 10;
+    transition: left 0.5s ease-in-out;
+
+}
+
+.navbar.change {
+    left: 0;
+
+}
+
+.navbar-links {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  color: gray;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  transition: color 0.3s;
+
+}
+
+.navbar-links:hover {
+    font-weight: 900;
+    color: var(--black);
+}
+
+.wrapper {
+    width: 100%;
+    perspective: 60rem;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--soft-white);
+    position: relative;
+    left: 0;
+    margin-bottom: 3rem;
+    transform-origin: left;
+    box-shadow: 0.5rem 0.5rem 1rem var(--gray-type);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+section.change {
+    left: 15vw;
+    transform: rotateY(10deg);
+    border-radius: 0;
+    box-shadow: 0.5rem -0.5rem 1rem var(--gray-type);
+
+}
+
+
+.section-1{
+    background-image: url('images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment:fixed; */
+}
+
+.insider{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100%;
+}
+
+.section-1 .title{
+    background-color: var(--soft-pink);
+    font-size: 6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px;
+    border-bottom: 0.3rem solid var(--white);
+    text-shadow: 0.2rem 0.2rem 1rem #555;
+    transform: skew(-10deg);
+    color:var(--white);
+
+
+}
+
+.yaba-photo{
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+    object-fit:cover;
+    object-position: center;
+    border: 10px dotted var(--soft-pink);
+    background-color: var(--soft-white);
+}       
+
+
+.name{
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transform: skew(-10deg);
+
+    
+}
+
+.name .one{
+    background-color: var(--soft-pink);
+    color:var(--white);
+
+}   
+
+.name .two{
+    background-color: var(--soft-pink);
+    display: block;
+    transform: translateX(7rem);
+    color:var(--white);
+
+}
+
+.insider button{
+    text-transform: uppercase;
+    border: 3px solid var(--black);
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    letter-spacing: 0.4rem;
+    
+}
+
+
+/* PROJECT */
+.section-3-wrapper{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.project-collection{
+    /* flex-grow: 90rem; */
+    /* flex-basis: 10rem; */
+}

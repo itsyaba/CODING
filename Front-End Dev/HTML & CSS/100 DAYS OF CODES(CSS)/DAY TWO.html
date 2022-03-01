@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Icon</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: burlywood;
+        }
+        .menu-btn {
+            border: 15px solid rgb(55, 194, 62);
+            border-radius: 10px;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
+        .one-btn , .two-btn , .three-btn , .btn-one , .btn-two{
+            background-color: #000;
+            height: 15px;
+            width: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
+        .one-btn{
+            top: 30%;
+
+        }
+        .two-btn{
+            top: 70%;
+        }
+        .home{
+            width: 0;
+        }
+         .btn-one{
+   
+            background-color: rgb(235, 74, 74);
+            transform: rotate(-50deg);
+            left: 20%;
+         }
+        .btn-two{
+            background-color: rgb(235, 74, 74);
+            transform: rotate(50deg) ;
+            left: 20%;
+        }
+       .home{
+            border: 15px solid rgb(55, 194, 62);
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 140%;
+       }
+    </style>
+</head>
+<body>
+    <div class="menu-btn">
+            <div class="one-btn"></div>
+            <div class="two-btn"></div>
+            <div class="three-btn"></div>
+        <div class="home">
+            <div class="btn btn-one"id = "btn"></div>
+            <div class="btn btn-two"id = "btn"></div>
+        </div>
+    </div>
+</body>
+<script>
+   var btn = document.getElementById("btn");
+    var sideNav = document.getElementById("sideNav");
+    sideNav.style.right = "-250px"
+    btn.onclick = function () {
+        if (sideNav.style.right == "-250px") {
+            sideNav.style.right = "0";
+        }
+        else {
+            sideNav.style.right = "-250px";
+        }
+    }
+</script>
+</html>

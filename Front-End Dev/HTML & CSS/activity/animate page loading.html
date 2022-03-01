@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        --nav-load-time:300ms;
+    }
+    nav{
+        background-color: red;
+        width: 100%;
+        animation: nav-load 300ms ease-in-out;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    nav li {
+        font-weight: 900;
+        font-size: 1rem;
+        padding: 20px;
+        list-style: none;
+        animation-name: title;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: backwards;
+        transform: scale(1);
+    }
+    article{
+        padding: 40px;
+    }
+    h3{
+        padding: 30px;
+    }
+    @keyframes nav-load{
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(0);
+
+        }
+    }
+
+ 
+    @keyframes title{
+        0%{
+            transform: translateX(-1000%);
+        
+        }
+        90%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+    <article class="one">
+        <h3>Head One</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo maiores veniam laboriosam. Magnam in veniam sequi nemo beatae hic aut fugit eum alias eveniet earum pariatur autem quos, quae, dicta iure quam cumque, sapiente natus! Iure labore provident cupiditate. Modi unde saepe deleniti earum molestiae, odit illo nihil quasi! Hic.</p>
+
+    </article>
+    <article class="two">
+        <h3>Head Two</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, fugit labore atque laboriosam libero ducimus eligendi veniam, voluptas consequuntur eos cum asperiores nulla, magni ratione.</p>
+    </article>
+</body>
+</html>

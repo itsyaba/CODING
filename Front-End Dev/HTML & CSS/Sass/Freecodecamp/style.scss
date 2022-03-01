@@ -1,0 +1,60 @@
+@import 'reset';
+@import 'varibale';
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+
+@mixin Basic-Flexbox($dxn){
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: $dxn;
+}
+
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background-color: lighten($background-color, 100%);
+        color: lighten($color, 100%)
+    }
+    
+}
+
+@mixin mobile {
+    @media (max-width:$mobile) {
+        @content;
+    }
+}
+
+.main{
+    @include Basic-Flexbox(row);
+    background-color: $backround-color;
+    color:$color;
+    font-size: $font-size;
+    h1{
+        color: $h1-color;
+    }
+   #{&}_para{
+
+       text-align: justify;
+        font-weight:weight(small);
+        &:hover{
+            color: purple;
+            font-weight: weight(regular);
+            background-color: pink;
+            border-radius: 30px;
+            padding: 10px;
+        }
+    }
+} 
+
+.light{
+    @include theme($light-theme : false);
+}
+
+@include mobile{
+    flex-direction: column;
+    color: saddlebrown;
+}
+
+// Themsbrand.com
